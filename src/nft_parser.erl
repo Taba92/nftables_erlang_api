@@ -1,3 +1,4 @@
+%% @hidden
 -module(nft_parser).
 -export([parse/1, parse_and_scan/1, format_error/1]).
 -file("nft_parser.yrl", 35).

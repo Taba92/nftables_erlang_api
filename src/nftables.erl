@@ -8,10 +8,11 @@
 		flush_chain/2,flush_chain/3,rename_chain/3,rename_chain/4,set_policy/3,set_policy/4]).
 -export([add_rule/3,add_rule/4,add_rule/5,insert_rule/3,insert_rule/4,insert_rule/5,
 		delete_rule/3,delete_rule/4,list_rule/4,list_rule/5,replace_rule/4,replace_rule/5]).
--include("nftables.hrl").
+-include("../include/nftables.hrl").
 
 %GENERAL UTILITY API
 %Formatta l'output dei comandi list_....
+% @doc Formatta l'output dei comandi list_....
 format_list(NftListOutput)->
 	{ok,Tokens,_}=nft_lexer:string(NftListOutput),
 	{ok,Data}=nft_parser:parse(Tokens),
