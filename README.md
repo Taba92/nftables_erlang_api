@@ -2,7 +2,8 @@
 
 Erlang API to nftables
 
-See edoc folder for API documentation.
+API : [nftables_api](https://github.com/Taba92/nftables_erlang_api/tree/main/doc/nftables.html)
+See edoc folder for more documentation.
 
 COMPILATION: rebar3 compile.
 
